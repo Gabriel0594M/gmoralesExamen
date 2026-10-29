@@ -44,6 +44,7 @@
                    Grid.Column="0"/>
 
             <Entry x:Name="txtUsuario"
+                   Style="{StaticResource GlobalEntry}"
                    Placeholder="Ingresa el usuario"
                    Grid.Row="0"
                    Grid.Column="1"/>
@@ -54,18 +55,21 @@
                    Grid.Column="0"/>
 
             <Entry x:Name="txtContrasena"
+                   Style="{StaticResource GlobalEntry}"
                    Placeholder="Ingresa la contraseña"
                    IsPassword="True"
                    Grid.Row="1"
                    Grid.Column="1"/>
 
             <Button x:Name="btnIniciarSesion"
+                    Style="{StaticResource GlobalBotones}"
                     Text="Iniciar sesión"
                     Clicked="btnIniciarSesion_Clicked"
                     Grid.Row="2"
                     Grid.Column="0"/>
 
             <Button x:Name="btnAcercaDe"
+                    Style="{StaticResource GlobalBotones}"
                     Text="Acerca de"
                     Clicked="btnAcercaDe_Clicked"
                     Grid.Row="2"

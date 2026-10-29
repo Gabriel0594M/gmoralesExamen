@@ -10,6 +10,7 @@
             Spacing="10">
 
             <Label x:Name="lblUsuario"
+                   Style="{StaticResource GlobalUsuario}"
                    Text="Usuario conectado: " />
 
             <Label
@@ -67,10 +68,12 @@
             </Grid>
 
             <Button x:Name="btnGenerarTxt"
+                    Style="{StaticResource GlobalBotones}"
                     Text="Generar TXT"
                     Clicked="btnGenerarTxt_Clicked"/>
 
             <Button x:Name="btnSalir"
+                    Style="{StaticResource GlobalBotones}"
                     Text="Salir"
                     Clicked="btnSalir_Clicked"/>
 

@@ -10,6 +10,7 @@
             Spacing="10">
 
             <Label x:Name="lblUsuario"
+                   Style="{StaticResource GlobalUsuario}"
                    Text="Usuario conectado: " />
 
             <Label
@@ -37,16 +38,19 @@
                 <Label Text="Edad" Grid.Row="0" Grid.Column="2"/>
 
                 <Entry x:Name="txtNombre"
+                       Style="{StaticResource GlobalEntry}"
                        Placeholder="Ingresar Nombre"
                        Grid.Row="1"
                        Grid.Column="0"/>
 
                 <Entry x:Name="txtApellido"
+                       Style="{StaticResource GlobalEntry}"
                        Placeholder="Ingresar Apellido"
                        Grid.Row="1"
                        Grid.Column="1"/>
 
                 <Entry x:Name="txtEdad"
+                       Style="{StaticResource GlobalEntry}"
                        Placeholder="Ingresar Edad"
                        Keyboard="Numeric"
                        MaxLength="2"
@@ -118,6 +122,7 @@
                        Grid.Column="0"/>
 
                 <Entry x:Name="txtMontoInicial"
+                       Style="{StaticResource GlobalEntry}"
                        Placeholder="Entre 120 y 600"
                        Keyboard="Numeric"
                        MaxLength="6"
@@ -127,12 +132,14 @@
                        Grid.Column="1"/>
 
                 <Button x:Name="btnCalcular"
+                        Style="{StaticResource GlobalBotones}"
                         Text="Calcular Pago mensual"
                         Clicked="btnCalcular_Clicked"
                         Grid.Row="4"
                         Grid.Column="0"/>
 
                 <Entry x:Name="txtPagoMensual"
+                       Style="{StaticResource GlobalEntry}"
                        Placeholder="Pago mensual"
                        IsReadOnly="True"
                        Grid.Row="4"
@@ -141,6 +148,7 @@
             </Grid>
 
             <Button x:Name="btnVerResumen"
+                    Style="{StaticResource GlobalBotones}"
                     Text="Ver Resumen"
                     Clicked="btnVerResumen_Clicked"/>
 

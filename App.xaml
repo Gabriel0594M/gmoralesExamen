@@ -9,6 +9,28 @@
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
+
+            <!--Estilos globales-->
+
+            <Style x:Key="GlobalBotones" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="DarkGreen"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="CornerRadius" Value="10"/>
+            </Style>
+
+            <Style x:Key="GlobalUsuario" TargetType="Label">
+                <Setter Property="TextColor" Value="DarkGreen"/>
+                <Setter Property="FontAttributes" Value="Italic"/>
+                <Setter Property="FontSize" Value="16"/>
+            </Style>
+
+            <Style x:Key="GlobalEntry" TargetType="Entry">
+                <Setter Property="BackgroundColor" Value="Honeydew"/>
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="PlaceholderColor" Value="Gray"/>
+                <Setter Property="FontSize" Value="16"/>
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
