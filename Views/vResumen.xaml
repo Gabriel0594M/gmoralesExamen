@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="gmoralesExamen.Views.vResumen"
+             Title="Resumen">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="20"
+            Spacing="10">
+
+            <Label x:Name="lblUsuario"
+                   Text="Usuario conectado: " />
+
+            <Label
+                Text="RESUMEN"
+                FontSize="22"
+                HorizontalOptions="Center" />
+
+            <!--Grid 9 filas x 2 columnas-->
+            <Grid RowSpacing="10" ColumnSpacing="10">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre:" Grid.Row="0" Grid.Column="0"/>
+                <Label x:Name="lblNombre" Grid.Row="0" Grid.Column="1"/>
+
+                <Label Text="Apellido:" Grid.Row="1" Grid.Column="0"/>
+                <Label x:Name="lblApellido" Grid.Row="1" Grid.Column="1"/>
+
+                <Label Text="Edad:" Grid.Row="2" Grid.Column="0"/>
+                <Label x:Name="lblEdad" Grid.Row="2" Grid.Column="1"/>
+
+                <Label Text="Fecha de inicio:" Grid.Row="3" Grid.Column="0"/>
+                <Label x:Name="lblFechaInicio" Grid.Row="3" Grid.Column="1"/>
+
+                <Label Text="Plan:" Grid.Row="4" Grid.Column="0"/>
+                <Label x:Name="lblPlan" Grid.Row="4" Grid.Column="1"/>
+
+                <Label Text="Casillero:" Grid.Row="5" Grid.Column="0"/>
+                <Label x:Name="lblCasillero" Grid.Row="5" Grid.Column="1"/>
+
+                <Label Text="Monto Inicial:" Grid.Row="6" Grid.Column="0"/>
+                <Label x:Name="lblMontoInicial" Grid.Row="6" Grid.Column="1"/>
+
+                <Label Text="Pago mensual:" Grid.Row="7" Grid.Column="0"/>
+                <Label x:Name="lblPagoMensual" Grid.Row="7" Grid.Column="1"/>
+
+                <Label Text="Pago Total:" Grid.Row="8" Grid.Column="0"/>
+                <Label x:Name="lblPagoTotal" Grid.Row="8" Grid.Column="1"/>
+
+            </Grid>
+
+            <Button x:Name="btnGenerarTxt"
+                    Text="Generar TXT"
+                    Clicked="btnGenerarTxt_Clicked"/>
+
+            <Button x:Name="btnSalir"
+                    Text="Salir"
+                    Clicked="btnSalir_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
