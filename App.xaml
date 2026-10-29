@@ -11,6 +11,9 @@
             </ResourceDictionary.MergedDictionaries>
 
             <!--Estilos globales-->
+            
+            
+            
 
             <Style x:Key="GlobalBotones" TargetType="Button">
                 <Setter Property="BackgroundColor" Value="DarkGreen"/>
